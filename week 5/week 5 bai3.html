@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create product list with CSS3</title>   
+  <style type="text/css">
+    .ProductDentail {display: none;}
+    .Product img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px #aaa;
+    }
+    .productName {font-weight: bold;}
+    .ProductPrice {font-style: italic;}
+    .ProductPrice:before {content: -;}
+    .Product {
+        text-align: center;
+        width: 150px;
+        margin: 0px 20px;
+        float:left;
+        cursor: pointer;
+    }
+    .Product:hover .ProductDentail {display: block;}
+    </style>
+    </head>
+    <body>
+    <div>
+        <div>
+            <div class="Product">
+            <img src="Image/z5249929481795_2a82c26b23e0e4f30e441cf74681c5d3.jpg">
+                <span class="ProductDentail">Rose</span>
+                <span class="ProductPrice">1.5$</span>
+            </div>
+        </div>
+        </div class="Product">
+            <img src="Image/z5249930038349_92a8be7e93ad798d22eeff88b71e8e6d.jpg">
+            <div class="Productdetails">
+                <span class="productName">Tulip</span>
+                <span class="ProductPrice">2.0$</span>
+            </div>
+        </div>
+        <div class="product">
+            <img src="Image/z5249930909355_46af7c73b3a859201bda0fc2a0b42252.jpg">
+            <div class="Productdetails">
+                <span class="productName">Daisy</span>
+                <span class="ProductPrice">1.0$</span>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
